@@ -65,12 +65,17 @@ class ClientConnection:
             sum += items.getBuyPrice(item["itemID"])
         return sum
 
-    #returns the gold value of stats gained from items
-    def getStatValue(self):
-        sum = 0
+    #returns a dictionary containing the total stats gained from items
+    def getTotalItemStats(self):
+        totalStats = {}
         for item in self.itemInfo:
-            sum += items.getItemValue(item["itemID"])
-        return sum
+            itemStats = items.getItemStats(item["itemID"])
+            for statName in itemStats.keys():
+                if (statName in totalStats):
+                    totalStats[statName] += itemStats[statName]
+                else:
+                    totalStats[statName] = itemStats[statName]
+        return totalStats
 
     #returns current spendable gold
     def getLiquidValue(self):
@@ -92,7 +97,8 @@ class ConsoleDisplay:
                 print(f"Current gold: {int(self.client.getLiquidValue())}")
                 print(f"Net Worth: {int(self.client.getTotalValue())}")
                 print()
-                print(f"Value of Stats: {int(self.client.getStatValue())}")
+                print("Total stats from items:")
+                print(self.client.getTotalItemStats())
             else:
                 print("No game detected")
             time.sleep(self.client.config.getint("SETTINGS", "UPDATEINTERVAL"))

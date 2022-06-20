@@ -1851,7 +1851,7 @@
       "tags": ["SpellDamage", "ManaRegen", "CooldownReduction", "AbilityHaste"],
       "maps": { "11": true, "12": true, "21": true, "22": false },
       "stats": {
-        "FlatMagicDamageMod": 55,
+        "FlatMagicDamageMod": 60,
         "PercentMPRegenMod": 1.0,
         "AbilityHasteMod": 20
       },
@@ -2251,7 +2251,7 @@
       "stats": {
         "FlatHPPoolMod": 250,
         "FlatMPPoolMod": 250,
-        "FlatArmorMod": 25,
+        "FlatArmorMod": 35,
         "AbilityHasteMod": 20
       },
       "depth": 3
@@ -2350,7 +2350,7 @@
       "maps": { "11": true, "12": true, "21": true, "22": false },
       "stats": {
         "FlatHPPoolMod": 450,
-        "FlatSpellBlockMod": 40,
+        "FlatSpellBlockMod": 50,
         "PercentHPRegenMod": 1.0,
         "AbilityHasteMod": 10
       },
@@ -2440,7 +2440,7 @@
         "w": 48,
         "h": 48
       },
-      "gold": { "base": 700, "purchasable": true, "total": 3200, "sell": 2240 },
+      "gold": { "base": 800, "purchasable": true, "total": 3200, "sell": 2240 },
       "tags": [
         "Health",
         "SpellBlock",
@@ -3089,7 +3089,7 @@
       "stats": {
         "FlatHPPoolMod": 400,
         "PercentHPRegenMod": 2.0,
-        "AbilityHasteMod": 10
+        "AbilityHasteMod": 20
       },
       "depth": 3
     },
@@ -3363,7 +3363,7 @@
       "gold": { "base": 450, "purchasable": true, "total": 800, "sell": 560 },
       "tags": ["Damage"],
       "maps": { "11": true, "12": true, "21": true, "22": false },
-      "stats": { "FlatPhysicalDamageMod": 15 },
+      "stats": { "FlatPhysicalDamageMod": 20 },
       "effect": { "Effect1Amount": "3" },
       "depth": 2
     },
@@ -3616,7 +3616,7 @@
       "maps": { "11": true, "12": true, "21": true, "22": false },
       "stats": {
         "FlatHPPoolMod": 250,
-        "FlatArmorMod": 80,
+        "FlatArmorMod": 90,
         "AbilityHasteMod": 10
       },
       "depth": 3
@@ -3710,7 +3710,7 @@
       "stats": {
         "FlatPhysicalDamageMod": 40,
         "PercentAttackSpeedMod": 0.25,
-        "PercentLifeStealMod": 0.07
+        "PercentLifeStealMod": 0.08
       },
       "depth": 3
     },
@@ -3850,7 +3850,7 @@
       "gold": { "base": 450, "purchasable": true, "total": 2500, "sell": 1750 },
       "tags": ["Health", "SpellDamage"],
       "maps": { "11": true, "12": true, "21": true, "22": false },
-      "stats": { "FlatHPPoolMod": 250, "FlatMagicDamageMod": 80 },
+      "stats": { "FlatHPPoolMod": 300, "FlatMagicDamageMod": 90 },
       "depth": 3
     },
     "3177": {
@@ -4998,7 +4998,7 @@
       "gold": { "base": 365, "purchasable": true, "total": 800, "sell": 560 },
       "tags": ["SpellDamage"],
       "maps": { "11": true, "12": true, "21": true, "22": false },
-      "stats": { "FlatMagicDamageMod": 30 },
+      "stats": { "FlatMagicDamageMod": 35 },
       "depth": 2
     },
     "4005": {
@@ -5253,7 +5253,7 @@
       },
       "stats": {
         "FlatHPPoolMod": 300,
-        "FlatMagicDamageMod": 80,
+        "FlatMagicDamageMod": 70,
         "AbilityHasteMod": 15,
         "PercentOmniVampMod": 7
       },
@@ -5317,7 +5317,7 @@
       "stats": {
         "FlatHPPoolMod": 300,
         "FlatMagicDamageMod": 90,
-        "AbilityHasteMod": 15
+        "AbilityHasteMod": 25
       },
       "depth": 3
     },
@@ -5484,7 +5484,7 @@
       "stats": {
         "FlatHPPoolMod": 250,
         "FlatMPPoolMod": 600,
-        "FlatMagicDamageMod": 60,
+        "FlatMagicDamageMod": 70,
         "AbilityHasteMod": 20
       },
       "depth": 3
@@ -5607,9 +5607,9 @@
       "tags": ["Health", "Damage", "CooldownReduction", "AbilityHaste"],
       "maps": { "11": true, "12": true, "21": true, "22": false },
       "stats": {
-        "FlatPhysicalDamageMod": 45,
+        "FlatPhysicalDamageMod": 55,
         "FlatHPPoolMod": 250,
-        "AbilityHasteMod": 15
+        "AbilityHasteMod": 25
       },
       "depth": 3
     },
@@ -5928,7 +5928,7 @@
         "w": 48,
         "h": 48
       },
-      "gold": { "base": 300, "purchasable": true, "total": 1100, "sell": 770 },
+      "gold": { "base": 200, "purchasable": true, "total": 1000, "sell": 770 },
       "tags": ["Health"],
       "maps": { "11": true, "12": true, "21": true, "22": false },
       "stats": { "FlatHPPoolMod": 300 },
@@ -5950,7 +5950,12 @@
         "w": 48,
         "h": 48
       },
-      "gold": { "base": 950, "purchasable": true, "total": 2800, "sell": 1960 },
+      "gold": {
+        "base": 1050,
+        "purchasable": true,
+        "total": 2800,
+        "sell": 1960
+      },
       "tags": [
         "Health",
         "SpellBlock",
@@ -5967,7 +5972,7 @@
         "PercentSizeMod": 0.06
       },
       "stats": {
-        "FlatHPPoolMod": 350,
+        "FlatHPPoolMod": 450,
         "FlatSpellBlockMod": 25,
         "FlatArmorMod": 25,
         "AbilityHasteMod": 20
@@ -5990,7 +5995,12 @@
         "w": 48,
         "h": 48
       },
-      "gold": { "base": 950, "purchasable": true, "total": 2800, "sell": 1960 },
+      "gold": {
+        "base": 1050,
+        "purchasable": true,
+        "total": 2800,
+        "sell": 1960
+      },
       "tags": [
         "Health",
         "SpellBlock",
@@ -6010,7 +6020,7 @@
         "AbilityHasteMod": 5
       },
       "stats": {
-        "FlatHPPoolMod": 350,
+        "FlatHPPoolMod": 450,
         "FlatSpellBlockMod": 25,
         "FlatArmorMod": 25,
         "AbilityHasteMod": 20
@@ -6556,7 +6566,7 @@
         "AbilityHasteMod": 5
       },
       "stats": {
-        "FlatHPPoolMod": 500,
+        "FlatHPPoolMod": 600,
         "FlatSpellBlockMod": 40,
         "FlatArmorMod": 40,
         "AbilityHasteMod": 25
@@ -6596,7 +6606,7 @@
         "PercentSlowResist": 0.05
       },
       "stats": {
-        "FlatHPPoolMod": 500,
+        "FlatHPPoolMod": 600,
         "FlatSpellBlockMod": 50,
         "FlatArmorMod": 50,
         "AbilityHasteMod": 25
@@ -6637,7 +6647,7 @@
         "PercentSizeMod": 0.06
       },
       "stats": {
-        "FlatHPPoolMod": 500,
+        "FlatHPPoolMod": 600,
         "FlatSpellBlockMod": 40,
         "FlatArmorMod": 40,
         "AbilityHasteMod": 25
@@ -6785,7 +6795,7 @@
       },
       "stats": {
         "FlatHPPoolMod": 450,
-        "FlatMagicDamageMod": 100,
+        "FlatMagicDamageMod": 90,
         "AbilityHasteMod": 20,
         "PercentOmniVampMod": 8
       },
@@ -6824,7 +6834,7 @@
       "stats": {
         "FlatHPPoolMod": 400,
         "FlatMagicDamageMod": 120,
-        "AbilityHasteMod": 20
+        "AbilityHasteMod": 30
       },
       "depth": 4
     },
@@ -7372,7 +7382,7 @@
       "stats": {
         "FlatHPPoolMod": 350,
         "FlatMPPoolMod": 800,
-        "FlatMagicDamageMod": 80,
+        "FlatMagicDamageMod": 90,
         "AbilityHasteMod": 25
       },
       "depth": 4
@@ -7443,7 +7453,7 @@
       "maps": { "11": true, "12": true, "21": true, "22": false },
       "stats": {
         "FlatHPPoolMod": 450,
-        "FlatSpellBlockMod": 30,
+        "FlatSpellBlockMod": 35,
         "AbilityHasteMod": 10
       },
       "depth": 3

@@ -91,6 +91,12 @@ def getBuyPrice(itemid):
     item = itemData[index]
     return item["gold"]["total"]
 
+#returns a dictionary containing the item's stats
+def getItemStats(itemid):
+    index = str(itemid)
+    item = itemData[index]
+    return item["stats"]
+
 #calculates gold value of an item's base stats
 def getItemValue(itemid):
     sum = 0
