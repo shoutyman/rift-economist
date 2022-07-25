@@ -123,6 +123,7 @@ itemlogfile.write(json.dumps(currentItems, indent = 4)) """
  
 if __name__ == "__main__":
     print("Initializing program...")
+    setup.updateItemData()
     program = ConsoleDisplay()
     running = True
     program.run()

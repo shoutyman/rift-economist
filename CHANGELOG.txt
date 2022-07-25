@@ -1,0 +1,15 @@
+6/28/2022
+PROGRAM PLAN
+Components:
+	An interface to display information
+		1 tab to display the player's gold information
+			Display each item's sprite, price, and value
+			Detailed information for each item either to the side or on mouseover
+			REQUIRES: 
+		1 tab to display the gold information for other players
+			Display each player's sprite
+			Display the sprites of each player's items next to them in league inventory style
+			Display each player's total buy price and total gold value
+			Display whether each other player has higher or lower gold value than the current player
+			REQUIRES:
+	A backend that queries the game and updates information automatically
