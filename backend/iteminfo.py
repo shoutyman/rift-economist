@@ -3,7 +3,7 @@ import json
 import configparser
 
 #local imports
-import formulas
+import backend.formulas as formulas
 
 #load item data
 config = configparser.ConfigParser()

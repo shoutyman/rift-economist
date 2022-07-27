@@ -13,3 +13,17 @@ Components:
 			Display whether each other player has higher or lower gold value than the current player
 			REQUIRES:
 	A backend that queries the game and updates information automatically
+
+7/25/2022
+Added a webscraper that fetches current item data from the League of Legends wiki every time the program runs
+This has also changed the format for item data.
+
+TODO:
+update iteminfo.py to read the new data format
+
+7/26/2022
+Currently splitting the project into two packages: backend and frontend
+
+TODO:
+update iteminfo.py to read the new data format
+modify imports so everything still works across packages

@@ -18,4 +18,8 @@ def updateItemData():
     config = configparser.ConfigParser()
     config.read("config.ini")
     outputfilename = config["PATH"]["ITEMDATAPATH"]
+    print(f"Sending item data to {outputfilename}")
     FetchItemData(outputfilename)
+
+if __name__ == "__main__":
+    updateItemData()

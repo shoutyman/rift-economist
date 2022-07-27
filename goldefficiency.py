@@ -1,12 +1,13 @@
 #import python modules
-import requests #to query the client
-import configparser #to read from config file
-import asyncio  #for timing
-import time #for timing
+import asyncio  # for timing
+import configparser  # to read from config file
+import time  # for timing
+import requests  # to query the client
 
-#local imports
-import iteminfo as items    #to calculate item values & efficiency
-import setup    #for setup and os-related functions
+#local application imports
+from backend import iteminfo as items  # to calculate item values & efficiency
+from backend import setup  # for setup and os-related functions
+
 
 class ClientConnection:
     def __init__(self):
@@ -33,7 +34,7 @@ class ClientConnection:
         
     #retrieves current game info from the client
     def updateGameInfo(self):
-        try:
+        try: 
             playerInfoRequest = requests.Request("GET", self.config["API"]["PLAYERDATAURL"])
             #champion info is required before fetching item info
             preparedPlayerInfoRequest = self.session.prepare_request(playerInfoRequest)
