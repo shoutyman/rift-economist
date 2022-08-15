@@ -13,7 +13,7 @@
             "cs"              : false
         },
         "effects" : {
-            "consume"         : "Grants [[g|text:*none*}}[[pp|100;112;140;176;220;274;300|-7+x;0+|type:target's kill bounty|color:gold}}, increased by [[g|100}} for First Blood. '''Can be used while dead.'''"
+            "consume"         : "Grants [[g|text:*none*}}[[pp|100;112;140;176;220;274;300|-7+x;0+|type:target's kill bounty|color:gold}}, increased by [[g|100}} for First Blood. '''Can be used while death|dead.'''"
         }
     },
     "Abyssal Mask" : {
@@ -127,7 +127,7 @@
             "act" : {   
                 "name"        : "Vow",
                 "unique"      : true,
-                "description" : "Curse the target enemy champion, designating them as your ''Nemesis'' and granting you 1 stack of ''Vendetta'' every 2 seconds over 60 seconds, up to 30 stacks, resetting upon selecting a new ''Nemesis''. '''Can be used while dead.''' Cannot be cast for 15 seconds while in combat with champions and having a ''Nemesis''.",
+                "description" : "Curse the target enemy champion, designating them as your ''Nemesis'' and granting you 1 stack of ''Vendetta'' every 2 seconds over 60 seconds, up to 30 stacks, resetting upon selecting a new ''Nemesis''. Cannot be cast for 15 seconds while in combat with champions.",
                 "cd"          : "90",
                 "range"       : "Global"
             },
@@ -160,7 +160,7 @@
         "effects" : {
             "pass" : {
                 "unique"      : true,
-                "description" : "[[tip|Turrets}} basic attacks are modified to deal [[as|[[pp|key:%|14;11;8|Outer;Inner;Inhibitor/Nexus|type:turret type}} of this minion's '''maximum''' health}} as pre-mitigation damage."
+                "description" : "[[tip|Turrets}} basic attacks are modified to deal [[as|[[pp|key:%|14;11;8|Outer;Inner;Inhibitor/Nexus|type:turret type}} of this minion's '''maximum''' health}} as [[tt|pre-mitigation damage|Damage calculated before modifiers}}."
             }
         }
     },
@@ -192,7 +192,7 @@
             "pass2" : {
                 "name"        : "Mana Charge",
                 "unique"      : true,
-                "description" : "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants [[as|3 '''bonus''' mana}}, increased to [[as|6|mana}} if it's a champion, up to a '''maximum''' of [[as|360 '''bonus''' mana}}."
+                "description" : "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants [[as|3 '''bonus''' mana}}, increased to [[as|6|mana}} if they are a champion, up to a '''maximum''' of [[as|360 '''bonus''' mana}}."
             },
             "pass3" : {
                 "description" : "Transforms into [[ii|Seraph's Embrace}} at [[as|+360 mana}}."
@@ -364,7 +364,7 @@
         "effects" : {
             "pass" : {
                 "unique"      : true,
-                "description" : "While no enemy [[tip|minions}} or [[ui|Rift Herald|Summoned Rift Herald}} are within range, gain [[fd|66.67%}} damage reduction and immunity to true damage."
+                "description" : "While no enemy [[tip|minions}} or [[ui|Rift Herald|Summoned Rift Herald}} are within range, gain [[fd|66.67%}} damage reduction and immunity to [[as|true damage}}."
             },
             "pass2" : {
                 "unique"      : true,
@@ -513,7 +513,7 @@
             "pass2" : {
                 "name"        : "Siphon",
                 "unique"      : true,
-                "description" : "Basic attacks on-hit against enemy champions apply a stack for 6 seconds, stacking up to 3 times. The third stack consumes all stacks to deal [[as|[[pp|40 to 150}} '''bonus''' magic damage}} on-hit and [[tip|slow}} the target by 25% for 2 seconds, while also granting you [[as|25% '''bonus''' movement speed}} for the same duration.",
+                "description" : "Basic attacks on-hit against enemy champions apply a stack for 6 seconds, stacking up to 3 times. The third stack consumes them all to deal [[as|[[pp|40 to 150}} '''bonus''' magic damage}} on-hit and [[tip|slow}} the target by 25% for 2 seconds, while also granting you [[as|25% '''bonus''' movement speed}} for the same duration.",
                 "cd"          : "20"
             }
         },
@@ -916,7 +916,7 @@
         },
         "effects" : {
             "pass" : {   
-                "description" : "Transforms into a [[ii|Perfectly Timed Stopwatch}} after 14 minutes. Scoring a [[tip|takedown}} against an enemy champion reduces this timer by 2 minutes. That Stopwatch contributes [[g|250}} to the item|items it builds into."
+                "description" : "Transforms into a [[ii|Perfectly Timed Stopwatch}} after 14 minutes. Scoring a [[tip|takedown}} against an enemy champion reduces this timer by 2 minutes. That '''Stopwatch''' contributes [[g|250}} to the items it builds into."
             }
         }
     },
@@ -950,7 +950,7 @@
             "health and reg"  : true
         },
         "effects" : {
-            "consume"         : "Consumes a charge to Health regeneration|regenerate [[as|[[fd|4.166}} health}} and [[as|[[fd|3.125}} mana}} every [[fd|0.5}} seconds over 12 seconds, for a total of [[as|100 health}} and [[as|75 mana}}. During this time, basic attacks and damaging champion ability|abilities against enemy champions burn them, dealing [[as|15 '''bonus''' magic damage}} over 3 seconds, increased to [[as|20|magic damage}} while the user cannot regenerate [[as|mana}}. '''Bonus''' damage is halved for area of effect and damage over time effects.",
+            "consume"         : "Consumes a charge to Health regeneration|regenerate [[as|[[fd|4.166}} health}} and [[as|[[fd|3.125}} mana}} every [[fd|0.5}} seconds over 12 seconds, for a total of [[as|100 health}} and [[as|75 mana}}. During this time, basic attacks and damaging champion ability|abilities against enemy champions burn them, dealing [[as|15 '''bonus''' magic damage}} over 3 seconds, increased to [[as|20|magic damage}} while the user cannot regenerate [[as|mana}}. '''Bonus''' damage is halved if applied by area of effect or damage over time.",
             "pass" : {   
                 "description" : "Holds charges that refill upon visiting the shop.",
                 "charges"     : "3"
@@ -1151,7 +1151,7 @@
             "pass" : {   
                 "name"        : "Shipwrecker",
                 "unique"      : true,
-                "description" : "While moving, generates 7 stacks of ''Momentum'' each [[fd|0.25}} seconds, granting up to [[as|40 '''bonus''' movement speed}} at 100 stacks after [[fd|3.75}} seconds of moving. ''Momentum'' decays by 15 every [[fd|0.25}} seconds while [[tip|immobilize|immobilized}}. Basic attacks consume all stacks on-hit to deal [[pp|0 to 40 for 11|0 to 100|type:Momentum|label1:stacks of Momentum|formula:1 for every 1 stack of Momentum, capped at 40}} [[as|(+ [[pp|0 to 100 for 11|0 to 100|key:%|type:Momentum|label1:stacks of Momentum|formula:1% for every 1 stack of Momentum, capped at 100}} '''base''' AD)}} [[as|'''bonus''' physical damage}}. At '''maximum''' stacks, the target is also [[tip|slow|slowed}} by 50% for 1 second."
+                "description" : "While moving, generates 7 stacks of ''Momentum'' each [[fd|0.25}} seconds, granting up to [[as|40 '''bonus''' movement speed}} at 100 stacks after [[fd|3.75}} seconds of moving. ''Momentum'' decays by 15 every [[fd|0.25}} seconds while [[tip|immobilize|immobilized}}. Basic attacks consume all stacks to deal [[pp|0 to 40 for 11|0 to 100|type:Momentum|label1:stacks of Momentum|formula:1 for every 1 stack of Momentum, capped at 40}} [[as|(+ [[pp|0 to 100 for 11|0 to 100|key:%|type:Momentum|label1:stacks of Momentum|formula:1% for every 1 stack of Momentum, capped at 100}} '''base''' AD)}} [[as|'''bonus''' physical damage}} on-hit. At '''maximum''' stacks, the target is also [[tip|slow|slowed}} by 50% for 1 second."
             }
         },
         "recipe"              : ["Winged Moonplate", "Ruby Crystal", "Chain Vest"],
@@ -1178,12 +1178,12 @@
             "pass" : {   
                 "name"        : "Ignore Pain",
                 "unique"      : true,
-                "description" : "Stores [[rd|30%|10%}} of all [[tt|post-mitigation|Damage calculated after modifiers}} [[as|physical|physical damage}} and [[as|magic|magic damage}} damage received, including on shields, which is successively taken as [[as|true damage}} over 3 seconds instead, dealing a third of the stored damage each second."
+                "description" : "Stores [[rd|30%|10%}} of all [[tt|post-mitigation|Damage calculated after modifiers}} [[as|physical|physical damage}} and [[as|magic|magic damage}} damage received, including on [[tip|shield|shields}}, which is successively taken as [[as|true damage}} over 3 seconds instead, dealing a third of the stored damage each second."
             },
             "pass2" : {
                 "name"        : "Defy",
                 "unique"      : true,
-                "description" : "If an enemy [[tip|champion}} dies within 3 seconds of you damaging them, removes ''Ignore Pain's'' remaining stored damage, and [[tip|heals}} you for [[as|120% '''bonus''' AD}} over 2 seconds."
+                "description" : "If an enemy champion dies within 3 seconds of you damaging them, removes ''Ignore Pain's'' remaining stored damage, and [[tip|heals}} you for [[as|120% '''bonus''' AD}} over 2 seconds."
             }
         },
         "recipe"              : ["Chain Vest", "Caulfield's Warhammer", "Pickaxe"],
@@ -1286,7 +1286,7 @@
             "pass" : {
                 "name"        : "Spellblade",
                 "unique"      : true,
-                "description" : "After using an champion ability|ability, your next basic attack within 10 seconds deals [[as|125% '''base''' AD}} [[as|(+ [[rd|6%|3%}} of target's '''maximum''' health)}} as [[as|'''bonus''' physical damage}} on-hit, with a '''minimum''' damage equal to [[as|150% '''base''' AD}} and a '''maximum''' damage against monsters equal to [[as|250% '''base''' AD}}. If the target is a champion, [[tip|heal}} for [[as|[[fd|81.25}}% '''base''' AD}} [[as|(+ [[rd|[[fd|3.9}}%|[[fd|1.95}}%}} of target's '''maximum''' health)}}.",
+                "description" : "After using an champion ability|ability, your next basic attack within 10 seconds deals [[as|125% '''base''' AD}} [[as|(+ [[rd|6%|3%}} of target's '''maximum''' health)}} as [[as|'''bonus''' physical damage}} on-hit, with a '''minimum''' damage equal to [[as|150% '''base''' AD}} and a '''maximum''' damage against monsters equal to [[as|250% '''base''' AD}}. If the target is a champion, [[tip|heal}} for [[as|[[fd|68.75}}% '''base''' AD}} [[as|(+ [[rd|[[fd|3.3}}%|[[fd|1.65}}%}} of target's '''maximum''' health)}}.",
                 "cd"          : "[[fd|1.5}} (begins after using the empowered attack)"
             },
             "mythic"          : {
@@ -1347,12 +1347,12 @@
             "pass" : {
                 "name"        : "Focus",
                 "unique"      : true,
-                "description" : "Basic attacks deal [[as|5 '''bonus''' physical damage}} on-hit against [[tip|minions}}."
+                "description" : "Basic attacks deal [[as|5 '''bonus''' physical damage}} on-hit against minions."
             },
             "pass2" : {
                 "name"        : "Drain",
                 "unique"      : true,
-                "description" : "Restore [[as|1 mana}} every second, increased to [[as|[[fd|1.5}}|mana}} for 10 seconds when you damage an enemy champion. If you can't gain mana, heal 45% of this value instead."
+                "description" : "Restore [[as|1 mana}} every second, increased to [[as|[[fd|1.5}}|mana}} for 10 seconds when you damage an enemy champion. If you cannot gain mana, [[tip|heal}} for [[ft|45% of this value|[[ap|1.5*0.45}}}}instead."
             }
         },
         "buy"                 : 400
@@ -1387,7 +1387,7 @@
             "pass2" : {
                 "name"        : "Endure",
                 "unique"      : true,
-                "description" : "After taking damage from a champion or large monster, gain health regeneration equal to [[pp|0 to 40 for 11|type:'''current missing''' health|color:health|key1:%|0 to 75|formula:0.53 health regen for 1% missing health}} health over 8 seconds. Reduced to 66% effectiveness on [[tip|ranged}} champions or when triggered by AoE, DoT or proc effects."
+                "description" : "After taking damage from a champion or large monster, gain health regeneration equal to [[pp|0 to 40 for 11|type:'''current missing''' health|color:health|key1:%|0 to 75|formula:0.53 health regen for every 1% missing health}} health over 8 seconds. Reduced to[[ft|66% effectiveness|[[pp|0 to 26.4 for 11|type:'''current missing''' health|color:health|key1:%|0 to 75|formula:0.35 health regen for every 1% missing health}}}} on [[tip|ranged}} champions or when triggered by area of effect, damage over time, or damage|proc."
             }
         },
         "buy"                 : 450
@@ -1494,7 +1494,7 @@
             "pass" : {   
                 "name"        : "Ever Rising Moon",
                 "unique"      : true,
-                "description" : "Hitting an enemy champion with 2 separate attacks or abilities within [[fd|1.5}} seconds deals them [[as|[[rd|6%|3%}} of target's '''maximum''' health}} as [[as|'''bonus''' physical damage}} and grants you [[as|15% '''bonus''' movement speed}} and a [[tip|shield}} for [[rd|160|80}} [[as|(+ [[rd|35%|[[fd|17.5}}%}} '''bonus''' AD)}} for 2 seconds.",
+                "description" : "Hitting an enemy champion with 2 separate attacks or abilities within [[fd|1.5}} seconds deals them [[as|'''bonus''' physical damage}} equal to [[as|[[rd|6%|3%}} of target's '''maximum''' health}} and grants you [[as|15% '''bonus''' movement speed}} and a [[tip|shield}} for [[rd|160|80}} [[as|(+ [[rd|35%|[[fd|17.5}}%}} '''bonus''' AD)}} for 2 seconds.",
                 "cd"          : "[[rd|8|16}}"
             },
             "mythic"          : {
@@ -1568,7 +1568,7 @@
             "mana and reg"    : true
         },
         "effects" : {
-            "consume"         : "Grants [[as|50 ability power}} and [[as|15 flat mana regeneration}} for 180 seconds. While active, going in combat by affecting enemy champion|champions or turrets deals [[as|25 '''bonus''' true damage}} (5 second cooldown on each champion, no cooldown against turrets). '''Can be used while death|dead.'''"
+            "consume"         : "Grants [[as|50 ability power}} and [[as|15 mana regeneration}} for 180 seconds. While active, going in combat by affecting enemy champion|champions or turrets deals them [[as|25 '''bonus''' true damage}} (5 second cooldown on each champion, no cooldown against turrets). '''Can be used while death|dead.'''"
         },
         "buy"                 : 500,
         "sellratio"           : 0.4
@@ -1636,7 +1636,7 @@
             "pass4" : {
                 "name"        : "Recoup",
                 "unique"      : true,
-                "description" : "Regenerate up to [[as|[[pp|8 to 18}} mana}} per second when in the jungle or river, based on [[as|'''missing''' mana}}."
+                "description" : "Regenerate up to [[as|[[pp|8 to 18}} mana}} per second while in the jungle or river, based on [[as|'''missing''' mana}}."
             }
         },
         "buy"                 : 350
@@ -1686,7 +1686,7 @@
             "pass" : {
                 "name"        : "Spellblade",
                 "unique"      : true,
-                "description" : "After using an champion ability|ability, your next basic attack within 10 seconds deals [[as|100% '''base''' AD (+ 40% '''bonus''' AD)}} [[as|'''bonus''' physical damage}} on-hit and restores [[as|mana}} equal to [[as|40% '''base''' AD (+ 16% '''bonus''' AD)}}.",
+                "description" : "After using an champion ability|ability, your next basic attack on-hit within 10 seconds deals [[as|100% '''base''' AD (+ 40% '''bonus''' AD)}} [[as|'''bonus''' physical damage}} and restores [[as|mana}} equal to [[as|40% '''base''' AD (+ 16% '''bonus''' AD)}}.",
                 "cd"          : "[[fd|1.5}} (begins after using the empowered attack)"
             }
         },
@@ -1771,7 +1771,7 @@
             "act" : {
                 "name"        : "Glaciate",
                 "unique"      : true,
-                "description" : "Unleash a fan of icy shards in a cone in the target direction, dealing [[as|100 [[as|(+ 30% AP)}} magic damage|magic damage}} to all enemies hit and [[tip|slow|slowing}} them by 65% for 1 second. Enemies struck in the center of the cone are [[tip|root|rooted}} for the same duration instead.",
+                "description" : "Unleash a fan of icy shards in a cone in the target direction, dealing [[as|100 [[as|(+ 30% AP)}} magic damage|magic damage}} to enemies struck within and [[tip|slow|slowing}} them by 65% for 1 second. Enemies hit in the center of the cone are [[tip|root|rooted}} for the same duration instead.",
                 "cd"          : "30"
             },
             "mythic"          : {
@@ -1846,7 +1846,7 @@
             "cs"              : false
         },
         "effects" : {
-            "consume"         : "[[Unique|Herald's Call|[[tip|Channel}} for 1 second and summon the '''Eye of the Herald''' in front of you, which is crushed over 5 seconds to summon an allied [[ui|Rift Herald}} that sieges enemy structures. This effect is placed on a 3-second cooldown while in combat status|combat with non-[[tip|minions}}.}}",
+            "consume"         : "[[Unique|Herald's Call|[[tip|Channel}} for 1 second and summon the '''Eye of the Herald''' in front of you, which is crushed over 5 seconds to summon an allied [[ui|Rift Herald}} that sieges enemy structures. This effect is placed on a 3-second cooldown while in combat status|combat with non-minions.}}",
             "pass" : {
                 "name"        : "Glimpse of the Void",
                 "unique"      : true,
@@ -2515,7 +2515,7 @@
         "effects" : {
             "pass" : {
                 "unique"      : true,
-                "description" : "[[tip|Turrets}} basic attacks are modified to deal [[as|45% of this minion's '''maximum''' health}} as pre-mitigation damage."
+                "description" : "[[tip|Turrets}} basic attacks are modified to deal [[as|45% of this minion's '''maximum''' health}} as [[tt|pre-mitigation damage|Damage calculated before modifiers}}."
             }
         }
     },
@@ -3086,7 +3086,7 @@
             "pass" : {
                 "name"        : "Bring It Down",
                 "unique"      : true,
-                "description" : "Basic attacks on-attack grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks on-attack to deal [[as|50 [[as|(+ 40% '''bonus''' AD)}} '''bonus''' true damage|true damage}} on-hit."
+                "description" : "Basic attacks [[rd|on-hit|on-attack}} grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks to deal [[as|50 [[as|(+ 40% '''bonus''' AD)}} '''bonus''' true damage|true damage}} on-hit."
             },
             "mythic"          : {
             	"as"				: 10
@@ -3491,13 +3491,13 @@
         "stats" : {
             "ad"              : 40,
             "crit"            : 20,
-            "mr"              : 30
+            "mr"              : 40
         },
         "effects" : {
             "act" : {
                 "name"        : "Quicksilver",
                 "unique"      : true,
-                "description" : "Removes all [[tip|crowd control}} debuffs (except [[tip|Airborne}}) from your champion and grants [[as|50% '''bonus total''' movement speed}} and [[tip|ghosted|ghosting}} for 1 second.",
+                "description" : "Removes all [[tip|crowd control}} debuffs (except [[tip|Airborne}}) from your champion and grants [[as|50% '''bonus total''' movement speed}} and [[tip|ghosted|ghosting}} for [[fd|1.5}} seconds.",
                 "cd"          : "90"
             }
         },
@@ -3934,7 +3934,7 @@
             "pass4" : {
                 "name"        : "Recoup",
                 "unique"      : true,
-                "description" : "Regenerate up to [[as|[[pp|8 to 18}} mana}} per second when in the jungle or river, based on [[as|'''missing''' mana}}."
+                "description" : "Regenerate up to [[as|[[pp|8 to 18}} mana}} per second while in the jungle or river, based on [[as|'''missing''' mana}}."
             }
         },
         "buy"                 : 350
@@ -4050,6 +4050,7 @@
             "act"             : ":>Stopwatch"
         },
         "recipe"              : ["Commencing Stopwatch"],
+        "sell"                : 40,
         "builds"				: ":>Stopwatch"
     },
     "Phage" : {
@@ -4121,7 +4122,7 @@
         "effects" : {
             "pass" : {   
                 "unique"      : true,
-                "description" : "[[tip|Turrets}} basic attacks are modified to deal [[as|70% of this minion's '''maximum''' health}} as pre-mitigation damage."
+                "description" : "[[tip|Turrets}} basic attacks are modified to deal [[as|70% of this minion's '''maximum''' health}} as [[tt|pre-mitigation damage|Damage calculated before modifiers}}."
             }
         }
     },
@@ -4461,7 +4462,7 @@
             "act" : {   
                 "name"        : "Intervention",
                 "unique"      : true,
-                "description" : "Call upon a beam of light to strike upon the target location after [[fd|2.5}} seconds, granting [[tip|sight}} of the area for the duration. Allies within the area are [[tip|heal|healed}} for [[pp|180 to 340|type:target's level}}, while enemy [[tip|champion|champions}} within take [[as|10% of target's '''maximum''' health}} as [[as|true damage}}. '''Can be used while dead.'''",
+                "description" : "Call upon a beam of light to strike upon the target location after [[fd|2.5}} seconds, granting [[tip|sight}} of the area for the duration. Allies within the area are [[tip|heal|healed}} for [[pp|180 to 340|type:target's level}}, while enemy champions within take [[as|10% of target's '''maximum''' health}} as [[as|true damage}}. '''Can be used while death|dead.'''",
                 "cd"          : "90",
                 "range"       : "5500"
             }
@@ -4825,7 +4826,7 @@
             "act" : {   
                 "name"        : "Trinket",
                 "unique"      : true,
-                "description" : "Consume a charge to place a visible [[tip|Effigy}} at the target location, which grants [[tip|sight}} of the surrounding area for [[pp|130 to 300}} seconds. The effigy visually appears exactly as [[ci|Fiddlesticks}} does to enemies while idle. Enemy [[tip|champion|champions}} that approach an effigy while having [[tip|sight}} of it will activate it, causing the effigy to fake a random action, after which the effigy will deal 1 damage to itself.",
+                "description" : "Consume a charge to place a visible [[tip|Effigy}} at the target location, which grants [[tip|sight}} of the surrounding area for [[pp|130 to 300}} seconds. The effigy visually appears exactly as [[ci|Fiddlesticks}} does to enemies while idle. Enemy champions that approach an effigy while having [[tip|sight}} of it will activate it, causing the effigy to fake a random action, after which the effigy will deal 1 damage to itself.",
                 "recharge"    : "[[pp|115 to 30}}",
                 "charges"     : "2",
                 "range"       : "625"
@@ -5161,13 +5162,13 @@
         "stats" : {
             "ad"              : 40,
             "hp"              : 300,
-            "mr"              : 35
+            "mr"              : 40
         },
         "effects" : {
             "act" : {   
                 "name"        : "Quicksilver",
                 "unique"      : true,
-                "description" : "Removes all [[tip|crowd control}} debuffs (except [[tip|Airborne}}) from your champion and grants 40% [[tip|tenacity}}, 40% [[tip|slow resist}}, and [[tip|ghosting}} for 3 seconds.",
+                "description" : "Removes all [[tip|crowd control}} debuffs (except [[tip|Airborne}}) from your champion and grants 50% [[tip|tenacity}}, 50% [[tip|slow resist}}, and [[tip|ghosting}} for 3 seconds.",
                 "cd"          : "90"
             }
         },
@@ -5508,7 +5509,7 @@
             }
         },
         "buy"                 : 650,
-        "sellratio"           : 0.7
+        "sellratio"           : 0.4
     },
     "Stormrazor" : {
         "id"                  : 3095,
@@ -5603,7 +5604,7 @@
             "pass" : {   
                 "name"        : "Immolate",
                 "unique"      : true,
-                "description" : "Taking or dealing damage activates this passive for 3 seconds. Deal [[as|15 [[as|(+ [[fd|1.75}}% '''bonus''' health)}} magic damage|magic damage}} every second to enemies within [[tip|cr|icononly : true}} 325 (+ 100% '''bonus''' size) units, increased by 25% against minions and 150% against monsters. This executes minions that would be killed by one more tick of damage. Damaging enemy champions or epic monsters with this effect grants a stack for 5 seconds, increasing subsequent ''Immolate'' damage by 10%, stacking up to 6 times compounding for a 60% total increase."
+                "description" : "Taking or dealing damage activates this passive for 3 seconds. Deal [[as|15 [[as|(+ [[fd|1.75}}% '''bonus''' health)}} magic damage|magic damage}} every second to enemies within [[tip|cr|icononly : true}} 325 (+ 100% '''bonus''' size) units, increased by 25% against minions and 150% against monsters. This executes minions that would be killed by one more tick of damage. Damaging enemy champions or epic monsters with this effect grants a stack for 5 seconds that increases subsequent ''Immolate'' damage by 10%, stacking up to 6 times for a 60% increase."
             },
             "pass2" : {
                 "name"        : "Flametouch",
@@ -5634,7 +5635,7 @@
         "effects" : {
             "pass" : {   
                 "unique"      : true,
-                "description" : "[[tip|Turrets}} basic attacks are modified to deal [[as|7% of this minion's '''maximum''' health}} as pre-mitigation damage."
+                "description" : "[[tip|Turrets}} basic attacks are modified to deal [[as|7% of this minion's '''maximum''' health}} as [[tt|pre-mitigation damage|Damage calculated before modifiers}}."
             }
         }
     },
@@ -5748,7 +5749,7 @@
             "pass2" : {   
                 "name"        : "Mana Charge",
                 "unique"      : true,
-                "description" : "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants [[as|3 '''bonus''' mana}}, increased to [[as|6|mana}} if it's a champion, up to '''maximum''' of [[as|360 '''bonus''' mana}}."
+                "description" : "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants [[as|3 '''bonus''' mana}}, increased to [[as|6|mana}} if they are a champion, up to '''maximum''' of [[as|360 '''bonus''' mana}}."
             }
         },
         "buy"                 : 400,
@@ -5952,7 +5953,7 @@
             "act" : {   
                 "name"        : "Supercharged",
                 "unique"      : true,
-                "description" : "For 4 seconds, grants [[as|40% '''bonus''' movement speed}} and [[tip|ghosted|ghosting}} when moving towards a [[tip|turret}} or [[tip|sight|visible}} enemy [[tip|champion}} within 2000 units. After the duration or when an enemy champion is within [[tt|225 units|center to edge}}, you emit a shockwave, [[tip|slow|slowing}} enemy champions within [[tip|cr|450}} range by 50% for [[fd|1.5}} seconds.",
+                "description" : "For 4 seconds, grants [[as|40% '''bonus''' movement speed}} and [[tip|ghosted|ghosting}} when moving towards a [[tip|turret}} or [[tip|sight|visible}} enemy champion within 2000 units. After the duration or when an enemy champion is within [[tt|225 units|center to edge}}, you emit a shockwave, [[tip|slow|slowing}} enemy champions within [[tip|cr|450}} range by 50% for [[fd|1.5}} seconds.",
                 "cd"          : "90"
             },
             "pass" : {   

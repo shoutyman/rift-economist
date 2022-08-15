@@ -27,3 +27,22 @@ Currently splitting the project into two packages: backend and frontend
 TODO:
 update iteminfo.py to read the new data format
 modify imports so everything still works across packages
+
+8/4/2022
+webscraper now cleans the data from the wiki into valid JSON, program runs
+
+TODO:
+have the program save game state (no game, loading, in game) so the program doesn't crash trying to retrieve data from a loading game
+
+8/5/2022
+The ClientConnection class now accurately tracks game state.
+TODO:
+add a Player class to store player information
+store a list of Players in each ClientConnection, with inventory information in each Player
+
+8/15/2022
+The program crashes on unknown items, specifically Broken Stopwatch but potentially others
+
+TODO:
+implement logging
+update item data fetching to log an error and continue on missing data instead of crashing

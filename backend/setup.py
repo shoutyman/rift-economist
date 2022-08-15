@@ -1,14 +1,14 @@
 #This file contains functions to setup the program.
 
-#python imports
-import json
+#standard library imports
 import configparser
+import logging
 import os
 
 #local imports
-from webscraper import FetchItemData
+from backend.webscraper import FetchItemData
 
-def clearConsole(): #if open, clears the console
+def clearConsole(): #clears the console to make way for the next frame
     command = 'clear'
     if os.name in ('nt', 'dos'):
         command = 'cls'
@@ -18,7 +18,7 @@ def updateItemData():
     config = configparser.ConfigParser()
     config.read("config.ini")
     outputfilename = config["PATH"]["ITEMDATAPATH"]
-    print(f"Sending item data to {outputfilename}")
+    logging.info(f"Sending item data to {outputfilename}")
     FetchItemData(outputfilename)
 
 if __name__ == "__main__":

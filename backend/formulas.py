@@ -1,5 +1,5 @@
 #This file contains formulas for calculating gold values.
-import backend.statvalues as values
+import backend.statkey as values
 def getAttackDamageValue(attackDamage):
     return attackDamage * values.ATTACKDAMAGE_VALUE
  
