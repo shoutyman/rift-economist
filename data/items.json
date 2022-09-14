@@ -1739,7 +1739,7 @@
             "pass" : {
                 "name"        : "Coruscation",
                 "unique"      : true,
-                "description" : "Becoming affected by or applying an [[tip|immobilize|immobilizing}} or [[tip|ground|grounding}} effect to or from an enemy champion affects them and all enemy champions in [[tip|cr|icononly : true}} 600 radius around you with ''Repent'', increasing the damage they take by 9% for 4 seconds."
+                "description" : "Becoming affected by or applying an [[tip|immobilize|immobilizing}} or [[tip|ground|grounding}} effect to or from an enemy champion affects them and all enemy champions in [[tip|cr|icononly : true}} 600 radius around you with ''Repent'', increasing the damage they take by 10% for 5 seconds."
             },
             "mythic"          : {
             	"armor"			: 5,
@@ -2382,7 +2382,7 @@
         "stats" : {
             "ad"              : 25,
             "hp"              : 150,
-            "lifesteal"       : 10
+            "lifesteal"       : 7
         },
         "effects" : {
             "pass" : {
@@ -2448,7 +2448,7 @@
             "mana and reg"    : true
         },
         "stats" : {
-            "ap"              : 40,
+            "ap"              : 50,
             "hp"              : 150
         },
         "effects" : {
@@ -3745,7 +3745,7 @@
             "pass" : {   
                 "name"        : "Deft Strikes",
                 "unique"      : true,
-                "description" : "Basic attacks on-attack that [[tip|critically strike}} reduce your basic abilities' cooldowns by 20% of their remaining cooldowns."
+                "description" : "Basic attacks on-attack that [[tip|critically strike}} reduce your basic abilities' '''current''' cooldowns by 20% of their remaining cooldowns."
             }
         },
         "recipe"              : ["Caulfield's Warhammer", "Pickaxe", "Cloak of Agility"],
@@ -5473,7 +5473,7 @@
             "pass" : {   
                 "name"        : "The Claws that Catch",
                 "unique"      : true,
-                "description" : "Gain [[as|45% '''base''' AD}} as '''bonus''' attack damage."
+                "description" : "Gain [[as|45% '''base''' AD}} as [[as|'''bonus''' attack damage}}."
             },
             "pass2" : {   
                 "name"        : "Lifeline",
@@ -5913,7 +5913,7 @@
             "pass" : {   
                 "name"        : "Threefold Strike",
                 "unique"      : true,
-                "description" : "Basic attacks grant [[as|20 '''bonus''' movement speed}} for 3 seconds and, if the target is a champion or a structure, increase [[as|'''base''' attack damage by 4%}} for the same duration, stacking up to 5 times for a [[as|20% increase|attack damage}}. Stacks decay once every [[fd|0.5}} seconds after the duration ends."
+                "description" : "Basic attacks grant [[as|20 '''bonus''' movement speed}} for 3 seconds and, if the target is a champion or a structure, increase [[as|'''base''' attack damage by 4%}} for the same duration, stacking up to 5 times for a [[as|20% increase|attack damage}}. Stacks expire by one every [[fd|0.5}} seconds when the duration ends."
             },
             "pass2" : {
                 "name"        : "Spellblade",
