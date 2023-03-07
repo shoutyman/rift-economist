@@ -12,6 +12,7 @@ class Player():
         self.currentGold = attributes.get("currentGold")
         self.items = attributes.get("items")
         self.position = attributes.get("position")
+        self.dead = attributes.get("isDead")
 
     def getSpentGold(self):
         value = 0
